@@ -1880,3 +1880,139 @@ h1, h2, h3, h4, h5, h6, p, .section-title, .section-subtitle, .stat-number, .sta
         height: 160px;
     }
 }
+
+@media (max-width: 600px) {
+  body {
+    font-size: 1.05rem;
+    padding: 0;
+  }
+  .container {
+    padding: 0 0.5rem;
+    max-width: 100vw;
+  }
+  .navbar {
+    height: 56px;
+    min-height: 56px;
+    padding: 0.5rem 0;
+  }
+  .nav-container {
+    height: 56px;
+    padding: 0 0.5rem;
+  }
+  .nav-logo h2 {
+    font-size: 1.3rem;
+  }
+  .nav-menu {
+    gap: 1.2rem;
+    font-size: 1rem;
+  }
+  .nav-link {
+    font-size: 1rem;
+    padding: 0.7rem 0;
+  }
+  .hero {
+    padding-top: 56px;
+    min-height: 80vh;
+  }
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+  .hero-title {
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+  }
+  .hero-subtitle {
+    font-size: 1.05rem;
+    margin-bottom: 1.2rem;
+  }
+  .hero-buttons {
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+  .btn, .service-btn {
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 1rem 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .about-content, .contact-content, .services-grid, .portfolio-grid, .blogs-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.2rem !important;
+  }
+  .about-text h3, .service-content h3, .blog-title {
+    font-size: 1.2rem;
+  }
+  .about-text p, .service-content p, .blog-desc {
+    font-size: 1rem;
+  }
+  .stat {
+    padding: 1rem;
+  }
+  .service-card, .portfolio-item, .blog-card, .contact-card, .contact-form {
+    padding: 1rem !important;
+    min-width: 0;
+  }
+  .service-image, .portfolio-image, .blog-image {
+    height: 140px !important;
+  }
+  .section-header {
+    margin-bottom: 2rem;
+  }
+  .section-title {
+    font-size: 1.3rem;
+  }
+  .section-subtitle {
+    font-size: 1rem;
+  }
+  .footer-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 1.2rem;
+  }
+  .footer-section h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.7rem;
+  }
+  .footer-section ul li {
+    margin-bottom: 0.5rem;
+  }
+  .footer-logo h3 {
+    font-size: 1.2rem;
+  }
+  .footer-tagline {
+    font-size: 0.9rem;
+  }
+  .footer-bottom {
+    padding-top: 1rem;
+    font-size: 0.9rem;
+  }
+  .social-links {
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  .social-link {
+    width: 36px;
+    height: 36px;
+    font-size: 1.1rem;
+  }
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+  .form-group input, .form-group select, .form-group textarea {
+    font-size: 1rem;
+    padding: 0.7rem;
+  }
+  .back-to-top {
+    width: 40px;
+    height: 40px;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 1.1rem;
+  }
+  .floating-cards, .bg-shape, .services-background, .portfolio-filters {
+    display: none !important;
+  }
+}
