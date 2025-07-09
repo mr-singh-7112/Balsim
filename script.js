@@ -49,8 +49,7 @@ class BalsimWebsite {
             btn.addEventListener('click', (e) => this.filterPortfolio(e));
         });
 
-        // Form submission
-        this.contactForm?.addEventListener('submit', (e) => this.handleFormSubmit(e));
+        // Removed custom JS handler for contact form to allow Formspree to work
 
         // Add loading completion event
         window.addEventListener('load', () => this.onPageLoad());
