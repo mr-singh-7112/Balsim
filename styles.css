@@ -1997,9 +1997,24 @@ h1, h2, h3, h4, h5, h6, p, .section-title, .section-subtitle, .stat-number, .sta
   }
   .contact-item {
     justify-content: center;
+    align-items: center;
     gap: 0.5rem;
     font-size: 1rem;
     margin-bottom: 0.3rem;
+    text-align: center;
+    flex-direction: row;
+  }
+  .contact-item i {
+    color: #fff !important;
+    font-size: 1.2rem;
+    margin-right: 0.3rem;
+    vertical-align: middle;
+  }
+  .contact-item span {
+    color: #fff !important;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
   }
   .footer-logo h3 {
     font-size: 1.2rem;
