@@ -1996,25 +1996,28 @@ h1, h2, h3, h4, h5, h6, p, .section-title, .section-subtitle, .stat-number, .sta
     margin: 0.5rem auto 0.5rem auto;
   }
   .contact-item {
-    justify-content: center;
+    display: flex;
     align-items: center;
+    justify-content: center;
     gap: 0.5rem;
-    font-size: 1rem;
-    margin-bottom: 0.3rem;
-    text-align: center;
-    flex-direction: row;
+    margin-bottom: 0.5rem;
   }
-  .contact-item i {
-    color: #fff !important;
-    font-size: 1.2rem;
-    margin-right: 0.3rem;
+  .contact-item svg, .contact-item i {
+    margin: 0 !important;
+    min-width: 1.2em;
+    min-height: 1.2em;
     vertical-align: middle;
   }
-  .contact-item span {
-    color: #fff !important;
+  .contact-item span, .contact-item a {
     display: inline-block;
     vertical-align: middle;
-    text-align: center;
+    color: white !important;
+    font-size: 1.05rem;
+    word-break: break-all;
+  }
+  .contact-item a {
+    color: white !important;
+    text-decoration: underline;
   }
   .footer-logo h3 {
     font-size: 1.2rem;

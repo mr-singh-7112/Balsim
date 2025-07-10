@@ -661,7 +661,7 @@ if (window.location.search.includes('success')) {
     const notif = document.createElement('div');
     notif.textContent = 'Thank you! Your message was sent successfully.';
     notif.style.position = 'fixed';
-    notif.style.bottom = '2rem';
+    notif.style.top = '1.5rem';
     notif.style.left = '50%';
     notif.style.transform = 'translateX(-50%)';
     notif.style.background = '#10b981';
@@ -669,11 +669,13 @@ if (window.location.search.includes('success')) {
     notif.style.padding = '1rem 2rem';
     notif.style.borderRadius = '1rem';
     notif.style.fontWeight = 'bold';
-    notif.style.boxShadow = '0 4px 16px rgba(0,0,0,0.15)';
-    notif.style.zIndex = '9999';
+    notif.style.boxShadow = '0 2px 12px rgba(0,0,0,0.15)';
+    notif.style.zIndex = 9999;
     document.body.appendChild(notif);
-    setTimeout(function() { notif.remove(); }, 4000);
-  }, 500);
+    setTimeout(function() {
+      notif.remove();
+    }, 4000);
+  }, 400);
 }
 </script>
 </body>
