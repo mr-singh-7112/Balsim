@@ -585,7 +585,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
@@ -654,5 +654,27 @@
     </button>
 
     <script src="script.js"></script>
+    <script>
+// Show success notification if redirected from Formsubmit
+if (window.location.search.includes('success')) {
+  setTimeout(function() {
+    const notif = document.createElement('div');
+    notif.textContent = 'Thank you! Your message was sent successfully.';
+    notif.style.position = 'fixed';
+    notif.style.bottom = '2rem';
+    notif.style.left = '50%';
+    notif.style.transform = 'translateX(-50%)';
+    notif.style.background = '#10b981';
+    notif.style.color = 'white';
+    notif.style.padding = '1rem 2rem';
+    notif.style.borderRadius = '1rem';
+    notif.style.fontWeight = 'bold';
+    notif.style.boxShadow = '0 4px 16px rgba(0,0,0,0.15)';
+    notif.style.zIndex = '9999';
+    document.body.appendChild(notif);
+    setTimeout(function() { notif.remove(); }, 4000);
+  }, 500);
+}
+</script>
 </body>
 </html>
